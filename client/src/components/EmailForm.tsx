@@ -29,7 +29,7 @@ export function EmailForm() {
     <div className="w-full max-w-md mx-auto my-8 min-h-[120px]">
       <div 
         ref={containerRef} 
-        className="w-full [&_form]:!font-sans [&_input]:!rounded-lg [&_input]:!border-border [&_button]:!bg-primary [&_button]:!text-primary-foreground [&_button]:!rounded-lg [&_button]:hover:!opacity-90"
+        className="w-full [&_form]:!font-sans [&_input]:!rounded-lg [&_input]:!border-border [&_button]:!bg-primary [&_button]:!text-primary-foreground [&_button]:!rounded-lg [&_button]:hover:!opacity-90 [&_.email-octopus-branding]:!hidden"
       />
     </div>
   );
