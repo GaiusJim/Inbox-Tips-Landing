@@ -85,7 +85,7 @@ export default function Home() {
         transition={{ delay: 0.8 }}
         className="mt-12 text-center text-sm text-muted-foreground"
       >
-        <p>&copy; {new Date().getFullYear()} Gaius Jim Edits. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Gaiusjimedits. All rights reserved.</p>
       </motion.footer>
     </div>
   );
