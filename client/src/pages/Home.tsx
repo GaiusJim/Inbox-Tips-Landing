@@ -55,7 +55,7 @@ export default function Home() {
               className="space-y-6 sm:space-y-8"
             >
               {/* Form Section */}
-              <div className="bg-primary/5 rounded-xl p-1 sm:p-2 border border-primary/10">
+              <div className="bg-primary/5 rounded-2xl p-4 sm:p-6 md:p-8 border border-primary/10 shadow-inner">
                  <EmailForm />
               </div>
 
