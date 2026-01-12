@@ -29,7 +29,7 @@ export function EmailForm() {
     <div className="w-full max-w-xl mx-auto my-8 min-h-[120px]">
       <div 
         ref={containerRef} 
-        className="w-full [&_form]:!font-sans [&_form]:!max-w-none [&_input]:!h-12 [&_input]:!text-base [&_input]:!rounded-xl [&_input]:!border-primary/20 [&_input]:!bg-white [&_input]:focus:!border-primary/40 [&_input]:focus:!ring-1 [&_input]:focus:!ring-primary/40 [&_button]:!h-12 [&_button]:!text-base [&_button]:!bg-primary [&_button]:!text-primary-foreground [&_button]:!rounded-xl [&_button]:!shadow-sm [&_button]:hover:!shadow-md [&_button]:hover:!opacity-95 [&_button]:!transition-all [&_.email-octopus-branding]:!hidden"
+        className="w-full [&_form]:!font-sans [&_form]:!max-w-none [&_input]:!h-12 [&_input]:!text-base [&_input]:!rounded-lg [&_input]:!border-border [&_button]:!h-12 [&_button]:!text-base [&_button]:!bg-primary [&_button]:!text-primary-foreground [&_button]:!rounded-lg [&_button]:hover:!opacity-90 [&_.email-octopus-branding]:!hidden"
       />
     </div>
   );
