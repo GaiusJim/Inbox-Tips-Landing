@@ -17,9 +17,9 @@ export default function Home() {
         <div className="flex flex-col md:flex-row">
           
           {/* Left Column: Image */}
-          <div className="w-full md:w-5/12 bg-muted/30 relative min-h-[300px] md:min-h-[600px]">
-            <div className="absolute inset-0 p-6 md:p-8 flex items-center justify-center">
-              <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-lg image-container bg-white">
+          <div className="w-full md:w-5/12 bg-muted/30 relative min-h-[400px] md:min-h-[600px]">
+            <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex items-center justify-center">
+              <div className="relative w-full aspect-[3/4] max-w-[320px] md:max-w-none rounded-2xl overflow-hidden shadow-lg image-container bg-white">
                 <img 
                   src={profileImg} 
                   alt="Gaius Jim" 
@@ -32,18 +32,18 @@ export default function Home() {
           </div>
 
           {/* Right Column: Content */}
-          <div className="w-full md:w-7/12 p-8 md:p-12 flex flex-col justify-center">
+          <div className="w-full md:w-7/12 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
             
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-4 sm:mb-6">
                 Proven Tips Straight to Your Inbox
               </h1>
               
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-8">
                 Get practical ideas on managing time and energy, handling unpredictable academic demands, building sustainable routines, and making steady progress as a graduate student.
               </p>
             </motion.div>
@@ -52,10 +52,10 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="space-y-8"
+              className="space-y-6 sm:space-y-8"
             >
               {/* Form Section */}
-              <div className="bg-primary/5 rounded-xl p-2 border border-primary/10">
+              <div className="bg-primary/5 rounded-xl p-1 sm:p-2 border border-primary/10">
                  <EmailForm />
               </div>
 
