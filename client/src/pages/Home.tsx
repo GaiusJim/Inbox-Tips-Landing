@@ -46,31 +46,31 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="w-full space-y-4"
+          className="w-full"
         >
-          <SocialLinks />
+          <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
+            <EmailForm />
+          </div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="w-full mt-8"
+          className="w-full mt-6"
         >
-          <div className="relative mb-6">
+          <div className="relative mb-5">
             <div className="absolute inset-0 flex items-center">
               <span className="w-full border-t border-border" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
               <span className="bg-background px-3 text-muted-foreground">
-                Get Updates
+                Connect With Me
               </span>
             </div>
           </div>
 
-          <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
-            <EmailForm />
-          </div>
+          <SocialLinks />
         </motion.div>
 
       </motion.div>
