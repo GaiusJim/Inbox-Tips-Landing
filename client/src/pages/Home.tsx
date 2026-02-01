@@ -1,91 +1,87 @@
 import { motion } from "framer-motion";
 import { EmailForm } from "@/components/EmailForm";
 import { SocialLinks } from "@/components/SocialLinks";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import profileImg from "@assets/20260110_133905_1768240962293.png";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-accent/30 selection:bg-primary/10 flex flex-col items-center justify-center p-4 sm:p-8 md:p-12">
+    <div className="min-h-screen bg-gradient-to-b from-primary/5 via-background to-background selection:bg-primary/10 flex flex-col items-center px-4 py-12 sm:py-16">
       
-      {/* Main Card Container */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="w-full max-w-4xl bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-white/50"
+        className="w-full max-w-md flex flex-col items-center"
       >
-        <div className="flex flex-col md:flex-row">
-          
-          {/* Left Column: Image */}
-          <div className="w-full md:w-5/12 bg-muted/30 relative min-h-[400px] md:min-h-[600px]">
-            <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex items-center justify-center">
-              <div className="relative w-full aspect-[3/4] max-w-[320px] md:max-w-none rounded-2xl overflow-hidden shadow-lg image-container bg-white">
-                <img 
-                  src={profileImg} 
-                  alt="Gaius Jim" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+        
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+          className="relative mb-6"
+        >
+          <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl scale-110" />
+          <Avatar className="w-32 h-32 sm:w-36 sm:h-36 border-4 border-background shadow-xl relative" data-testid="img-profile-avatar">
+            <AvatarImage src={profileImg} alt="Gaius Jim" className="object-cover" />
+            <AvatarFallback className="text-2xl font-bold bg-primary/10 text-primary">GJ</AvatarFallback>
+          </Avatar>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="text-center mb-8"
+        >
+          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2" data-testid="text-profile-name">
+            Gaius Jim
+          </h1>
+          <p className="text-muted-foreground text-sm sm:text-base max-w-xs mx-auto leading-relaxed" data-testid="text-profile-bio">
+            Practical tips on managing time, energy, and making steady progress as a graduate student.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="w-full space-y-4"
+        >
+          <SocialLinks />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="w-full mt-8"
+        >
+          <div className="relative mb-6">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t border-border" />
             </div>
-            {/* Decorative background circle */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-primary/5 rounded-full blur-3xl -z-10" />
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-background px-3 text-muted-foreground">
+                Get Updates
+              </span>
+            </div>
           </div>
 
-          {/* Right Column: Content */}
-          <div className="w-full md:w-7/12 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
-            
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-4 sm:mb-6">
-                Proven Tips Straight to Your Inbox
-              </h1>
-              
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-8">
-                Get practical ideas on managing time and energy, handling unpredictable academic demands, building sustainable routines, and making steady progress as a graduate student.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="space-y-6 sm:space-y-8"
-            >
-              {/* Form Section */}
-              <div className="bg-primary/5 rounded-2xl p-4 sm:p-6 md:p-8 border border-primary/10 shadow-inner">
-                 <EmailForm />
-              </div>
-
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <span className="w-full border-t border-border" />
-                </div>
-                <div className="relative flex justify-center text-xs uppercase">
-                  <span className="bg-white/0 px-2 text-muted-foreground backdrop-blur-md">
-                    Connect With Me
-                  </span>
-                </div>
-              </div>
-
-              {/* Links Section */}
-              <SocialLinks />
-            </motion.div>
-
+          <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
+            <EmailForm />
           </div>
-        </div>
+        </motion.div>
+
       </motion.div>
       
-      {/* Footer */}
       <motion.footer 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
-        className="mt-12 text-center text-sm text-muted-foreground"
+        className="mt-12 text-center text-xs text-muted-foreground"
       >
-        <p>&copy; {new Date().getFullYear()} Gaiusjimedits. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Gaiusjimedits</p>
       </motion.footer>
     </div>
   );

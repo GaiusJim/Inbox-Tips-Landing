@@ -1,4 +1,4 @@
-import { ExternalLink, Globe, BookOpen, LayoutTemplate, Instagram } from "lucide-react";
+import { Globe, BookOpen, LayoutTemplate, Instagram } from "lucide-react";
 
 interface SocialLinkProps {
   href: string;
@@ -12,15 +12,15 @@ function SocialLink({ href, icon, label }: SocialLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-3 p-4 w-full bg-white border border-border rounded-xl shadow-sm hover:shadow-md hover:border-primary/20 hover:-translate-y-0.5 transition-all duration-200 group"
+      className="flex items-center justify-center gap-3 py-4 px-6 w-full bg-card border border-border rounded-xl shadow-sm hover:shadow-md hover:bg-accent hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group"
+      data-testid={`link-${label.toLowerCase().replace(/\s+/g, '-')}`}
     >
-      <div className="text-primary/70 group-hover:text-primary transition-colors">
+      <div className="text-primary group-hover:scale-110 transition-transform">
         {icon}
       </div>
-      <span className="font-medium text-foreground group-hover:text-primary transition-colors">
+      <span className="font-medium text-foreground">
         {label}
       </span>
-      <ExternalLink className="w-4 h-4 ml-auto text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
     </a>
   );
 }
@@ -50,7 +50,7 @@ export function SocialLinks() {
   ];
 
   return (
-    <div className="grid gap-4 w-full max-w-md mx-auto mt-8">
+    <div className="flex flex-col gap-3 w-full" data-testid="container-social-links">
       {links.map((link) => (
         <SocialLink key={link.href} {...link} />
       ))}
