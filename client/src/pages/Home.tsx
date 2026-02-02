@@ -38,7 +38,7 @@ export default function Home() {
             Gaius Jim
           </h1>
           <p className="text-muted-foreground text-sm sm:text-base max-w-xs mx-auto leading-relaxed" data-testid="text-profile-bio">
-            Practical tips on managing time, energy, and making steady progress as a graduate student.
+            Get practical tips on managing time, energy, and making steady progress as a graduate student.
           </p>
         </motion.div>
 
