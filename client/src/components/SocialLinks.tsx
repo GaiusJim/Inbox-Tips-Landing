@@ -38,7 +38,7 @@ export function SocialLinks() {
       icon: <BookOpen className="w-5 h-5" />,
     },
     {
-      label: "Download Templates",
+      label: "Download Template",
       href: "https://template.gaiusjimedits.com",
       icon: <LayoutTemplate className="w-5 h-5" />,
     },
