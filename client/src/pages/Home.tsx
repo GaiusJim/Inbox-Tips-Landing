@@ -22,7 +22,7 @@ export default function Home() {
           className="relative mb-6"
         >
           <Avatar className="w-32 h-32 sm:w-36 sm:h-36 border-4 border-background relative" data-testid="img-profile-avatar">
-            <AvatarImage src={profileImg} alt="Gaius Jim" className="object-cover" loading="eager" fetchPriority="high" />
+            <AvatarImage src={profileImg} alt="Gaius Jim" className="object-cover" loading="eager" />
             <AvatarFallback className="text-2xl font-bold bg-primary/10 text-primary">GJ</AvatarFallback>
           </Avatar>
         </motion.div>
@@ -47,7 +47,7 @@ export default function Home() {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="w-full"
         >
-          <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
+          <div className="bg-white rounded-2xl p-5 border border-border shadow-sm">
             <EmailForm />
           </div>
         </motion.div>
