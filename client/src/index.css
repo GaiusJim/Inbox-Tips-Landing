@@ -6,27 +6,27 @@
 
 :root {
   /* Elegant, academic palette: Deep navy/charcoal, crisp white, soft beige/gray accents */
-  --background: 0 0% 100%;
-  --foreground: 222 47% 11%;
+  --background: 35 100% 98%; /* #FFFBF6 - Subtle creamy background */
+  --foreground: 219 47% 19%; /* #1A2B48 - Deep navy font color */
   
-  --primary: 222 47% 11%; /* Deep Charcoal/Navy */
-  --primary-foreground: 210 40% 98%;
+  --primary: 219 47% 19%; /* #1A2B48 */
+  --primary-foreground: 35 100% 98%;
   
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222 47% 11%;
+  --secondary: 219 10% 90%;
+  --secondary-foreground: 219 47% 19%;
   
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215 16% 47%;
+  --muted: 219 10% 95%;
+  --muted-foreground: 219 20% 40%;
   
-  --accent: 35 30% 96%; /* Soft cream for subtle backgrounds */
-  --accent-foreground: 222 47% 11%;
+  --accent: 35 50% 94%;
+  --accent-foreground: 219 47% 19%;
   
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
   
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222 47% 11%;
+  --border: 219 20% 90%;
+  --input: 219 20% 90%;
+  --ring: 219 47% 19%;
   
   --radius: 0.5rem;
 

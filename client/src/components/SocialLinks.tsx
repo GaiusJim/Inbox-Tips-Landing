@@ -1,4 +1,4 @@
-import { Globe, BookOpen, LayoutTemplate, Instagram } from "lucide-react";
+import { Globe, BookOpen, Linkedin } from "lucide-react";
 
 interface SocialLinkProps {
   href: string;
@@ -12,7 +12,7 @@ function SocialLink({ href, icon, label }: SocialLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-center gap-3 py-4 px-6 w-full bg-card border border-border rounded-xl shadow-sm hover:shadow-md hover:bg-accent hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group"
+      className="flex items-center justify-center gap-3 py-4 px-6 w-full bg-card border border-border rounded-xl shadow-sm hover:shadow-md hover:bg-accent hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group no-default-hover-elevate"
       data-testid={`link-${label.toLowerCase().replace(/\s+/g, '-')}`}
     >
       <div className="text-primary group-hover:scale-110 transition-transform">
@@ -40,12 +40,12 @@ export function SocialLinks() {
     {
       label: "Download Template",
       href: "https://template.gaiusjimedits.com",
-      icon: <LayoutTemplate className="w-5 h-5" />,
+      icon: <Linkedin className="w-5 h-5" />,
     },
     {
-      label: "Follow on Instagram",
-      href: "https://www.instagram.com/gaiusjimedits",
-      icon: <Instagram className="w-5 h-5" />,
+      label: "Connect on LinkedIn",
+      href: "https://www.linkedin.com/in/gaiusjimedits",
+      icon: <Linkedin className="w-5 h-5" />,
     },
   ];
 

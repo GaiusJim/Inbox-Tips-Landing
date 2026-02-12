@@ -6,24 +6,23 @@ import profileImg from "@assets/20260110_133905_1768240962293.png";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary/5 via-background to-background selection:bg-primary/10 flex flex-col items-center px-4 py-12 sm:py-16">
+    <div className="min-h-screen bg-background selection:bg-primary/10 flex flex-col items-center px-4 py-12 sm:py-16">
       
       <motion.div 
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         className="w-full max-w-md flex flex-col items-center"
       >
         
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
+          initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           className="relative mb-6"
         >
-          <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl scale-110" />
-          <Avatar className="w-32 h-32 sm:w-36 sm:h-36 border-4 border-background shadow-xl relative" data-testid="img-profile-avatar">
-            <AvatarImage src={profileImg} alt="Gaius Jim" className="object-cover" />
+          <Avatar className="w-32 h-32 sm:w-36 sm:h-36 border-4 border-background relative" data-testid="img-profile-avatar">
+            <AvatarImage src={profileImg} alt="Gaius Jim" className="object-cover" loading="eager" fetchPriority="high" />
             <AvatarFallback className="text-2xl font-bold bg-primary/10 text-primary">GJ</AvatarFallback>
           </Avatar>
         </motion.div>
