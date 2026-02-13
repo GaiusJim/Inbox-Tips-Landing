@@ -1,4 +1,4 @@
-import { Globe, BookOpen, LayoutTemplate, Instagram } from "lucide-react";
+import { Globe, BookOpen, LayoutTemplate, Linkedin } from "lucide-react";
 
 interface SocialLinkProps {
   href: string;
@@ -43,9 +43,9 @@ export function SocialLinks() {
       icon: <LayoutTemplate className="w-5 h-5" />,
     },
     {
-      label: "Follow on Instagram",
-      href: "https://www.instagram.com/gaiusjimedits/",
-      icon: <Instagram className="w-5 h-5" />,
+      label: "Connect on LinkedIn",
+      href: "https://www.linkedin.com/in/gaiusjimedits/",
+      icon: <Linkedin className="w-5 h-5" />,
     },
   ];
 
