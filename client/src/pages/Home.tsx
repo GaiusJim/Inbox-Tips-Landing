@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { EmailForm } from "@/components/EmailForm";
 import { SocialLinks } from "@/components/SocialLinks";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { CheckCircle2 } from "lucide-react";
 import profileImg from "@assets/20260110_133905_1768240962293.png";
 
 export default function Home() {
@@ -33,9 +34,12 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-center mb-8"
         >
-          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2" data-testid="text-profile-name">
-            Gaius Jim
-          </h1>
+          <div className="flex items-center justify-center gap-1.5 mb-2">
+            <h1 className="text-2xl sm:text-3xl font-bold text-foreground" data-testid="text-profile-name">
+              Gaius Jim
+            </h1>
+            <CheckCircle2 className="w-5 h-5 text-blue-500 fill-blue-500/10" data-testid="icon-verified" />
+          </div>
           <p className="text-muted-foreground text-sm sm:text-base max-w-xs mx-auto leading-relaxed" data-testid="text-profile-bio">
             Get practical tips on managing time, energy, and making steady progress as a graduate student.
           </p>

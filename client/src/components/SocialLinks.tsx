@@ -1,4 +1,4 @@
-import { Globe, BookOpen, LayoutTemplate, Linkedin } from "lucide-react";
+import { Globe, BookOpen, LayoutTemplate, Instagram } from "lucide-react";
 
 interface SocialLinkProps {
   href: string;
@@ -29,23 +29,23 @@ export function SocialLinks() {
   const links = [
     {
       label: "Visit Website",
-      href: "https://www.gaiusjimedits.com",
+      href: "https://copyeditor.gaiusjimedits.com/linkinbio",
       icon: <Globe className="w-5 h-5" />,
     },
     {
       label: "Get the Ebook",
-      href: "https://ebook.gaiusjimedits.com",
+      href: "https://ebook.gaiusjimedits.com/b/hoREr/af6977458309da0",
       icon: <BookOpen className="w-5 h-5" />,
     },
     {
       label: "Download Template",
-      href: "https://template.gaiusjimedits.com",
+      href: "https://template.gaiusjimedits.com/b/2PEQe/af698eb4754fa",
       icon: <LayoutTemplate className="w-5 h-5" />,
     },
     {
-      label: "Connect on LinkedIn",
-      href: "https://www.linkedin.com/in/gaiusjimedits",
-      icon: <Linkedin className="w-5 h-5" />,
+      label: "Follow on Instagram",
+      href: "https://www.instagram.com/gaiusjimedits/",
+      icon: <Instagram className="w-5 h-5" />,
     },
   ];
 
