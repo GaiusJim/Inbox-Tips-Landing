@@ -38,9 +38,9 @@ export default function Home() {
             <h1 className="text-2xl sm:text-3xl font-bold text-foreground" data-testid="text-profile-name">
               Gaius Jim
             </h1>
-            <CheckCircle2 className="w-5 h-5 text-blue-500 fill-blue-500/10" data-testid="icon-verified" />
+            <CheckCircle2 className="w-5 h-5 fill-[#0095F6] text-white" data-testid="icon-verified" />
           </div>
-          <p className="text-muted-foreground text-sm sm:text-base max-w-xs mx-auto leading-relaxed" data-testid="text-profile-bio">
+          <p className="text-base sm:text-lg max-w-xs mx-auto leading-relaxed" style={{ color: "#1a2b48" }} data-testid="text-profile-bio">
             Get practical tips on managing time, energy, and making steady progress as a graduate student.
           </p>
         </motion.div>

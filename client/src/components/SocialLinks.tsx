@@ -28,17 +28,17 @@ function SocialLink({ href, icon, label }: SocialLinkProps) {
 export function SocialLinks() {
   const links = [
     {
-      label: "Visit Website",
+      label: "Copyediting Service For Graduate Students",
       href: "https://copyeditor.gaiusjimedits.com/linkinbio",
       icon: <Globe className="w-5 h-5" />,
     },
     {
-      label: "Get the Ebook",
+      label: "Practical Ways to Defeat Procrastination: A Productivity Guide For Graduate Students",
       href: "https://ebook.gaiusjimedits.com/b/hoREr/af6977458309da0",
       icon: <BookOpen className="w-5 h-5" />,
     },
     {
-      label: "Download Template",
+      label: "Graduate Productivity Notion Template (3 in 1 Bundle)",
       href: "https://template.gaiusjimedits.com/b/2PEQe/af698eb4754fa",
       icon: <LayoutTemplate className="w-5 h-5" />,
     },
