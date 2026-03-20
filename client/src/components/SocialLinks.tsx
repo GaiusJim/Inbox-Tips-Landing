@@ -4,18 +4,19 @@ interface SocialLinkProps {
   href: string;
   icon: React.ReactNode;
   label: string;
+  alignLeft?: boolean;
 }
 
-function SocialLink({ href, icon, label }: SocialLinkProps) {
+function SocialLink({ href, icon, label, alignLeft }: SocialLinkProps) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-center gap-3 py-4 px-6 w-full bg-white border border-border rounded-xl shadow-sm hover:shadow-md hover:bg-accent hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group no-default-hover-elevate"
+      className={`flex items-center gap-3 py-4 px-6 w-full bg-white border border-border rounded-xl shadow-sm hover:shadow-md hover:bg-accent hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group no-default-hover-elevate ${alignLeft ? "justify-start" : "justify-center"}`}
       data-testid={`link-${label.toLowerCase().replace(/\s+/g, '-')}`}
     >
-      <div className="text-primary group-hover:scale-110 transition-transform">
+      <div className="text-primary group-hover:scale-110 transition-transform shrink-0">
         {icon}
       </div>
       <span className="font-medium text-foreground">
@@ -46,6 +47,7 @@ export function SocialLinks() {
       label: "Connect on LinkedIn",
       href: "https://www.linkedin.com/in/gaiusjimedits/",
       icon: <Linkedin className="w-5 h-5" />,
+      alignLeft: true,
     },
   ];
 

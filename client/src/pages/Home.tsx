@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { EmailForm } from "@/components/EmailForm";
 import { SocialLinks } from "@/components/SocialLinks";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import profileImg from "@assets/20260110_133905_1768240962293.png";
+import profileImg from "@assets/picture_1774031319931.png";
 
 function InstagramVerifiedBadge() {
   return (
