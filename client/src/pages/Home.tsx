@@ -2,8 +2,29 @@ import { motion } from "framer-motion";
 import { EmailForm } from "@/components/EmailForm";
 import { SocialLinks } from "@/components/SocialLinks";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { CheckCircle2 } from "lucide-react";
 import profileImg from "@assets/20260110_133905_1768240962293.png";
+
+function InstagramVerifiedBadge() {
+  return (
+    <svg
+      viewBox="0 0 40 40"
+      width="20"
+      height="20"
+      data-testid="icon-verified"
+      aria-label="Verified"
+    >
+      <circle cx="20" cy="20" r="20" fill="#0095F6" />
+      <polyline
+        points="11.5,20.5 17,26.5 28.5,14"
+        fill="none"
+        stroke="white"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export default function Home() {
   return (
@@ -38,7 +59,7 @@ export default function Home() {
             <h1 className="text-2xl sm:text-3xl font-bold text-foreground" data-testid="text-profile-name">
               Gaius Jim
             </h1>
-            <CheckCircle2 className="w-5 h-5 fill-[#0095F6] text-white" data-testid="icon-verified" />
+            <InstagramVerifiedBadge />
           </div>
           <p className="text-base sm:text-lg max-w-xs mx-auto leading-relaxed" style={{ color: "#1a2b48" }} data-testid="text-profile-bio">
             Get practical tips on managing time, energy, and making steady progress as a graduate student.
