@@ -62,3 +62,34 @@ html {
   transform: translate(-4px, -4px);
   box-shadow: 24px 24px 0px 0px rgba(220, 220, 220, 0.6);
 }
+
+/* Rotating neon glow border */
+@property --glow-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate-glow {
+  to { --glow-angle: 360deg; }
+}
+
+.link-glow {
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(white, white),
+    conic-gradient(from var(--glow-angle), transparent 60%, #1a2b48 78%, transparent 94%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: rotate-glow 2.5s linear infinite;
+  box-shadow: 0 0 10px 1px rgba(26, 43, 72, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.link-glow:hover,
+.link-glow:active {
+  background-image:
+    linear-gradient(white, white),
+    conic-gradient(from var(--glow-angle), transparent 60%, #008060 78%, transparent 94%);
+  box-shadow: 0 0 14px 2px rgba(0, 128, 96, 0.35);
+}

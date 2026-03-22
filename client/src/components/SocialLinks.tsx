@@ -13,7 +13,7 @@ function SocialLink({ href, icon, label, alignLeft }: SocialLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex items-center gap-3 py-4 px-6 w-full bg-white border border-border rounded-xl shadow-sm hover:shadow-md hover:bg-accent hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group no-default-hover-elevate ${alignLeft ? "justify-start" : "justify-center"}`}
+      className={`link-glow flex items-center gap-3 py-4 px-6 w-full rounded-xl hover:-translate-y-0.5 transition-transform duration-200 group ${alignLeft ? "justify-start" : "justify-center"}`}
       data-testid={`link-${label.toLowerCase().replace(/\s+/g, '-')}`}
     >
       <div className="text-primary group-hover:scale-110 transition-transform shrink-0">
