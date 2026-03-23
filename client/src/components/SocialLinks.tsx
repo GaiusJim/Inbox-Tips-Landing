@@ -61,12 +61,10 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             data-testid="link-modal-linkedin"
           >
             <div
-              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200"
-              style={{ backgroundColor: "#0077B5" }}
+              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-white"
             >
-              <SiLinkedin className="w-12 h-12 text-white" />
+              <SiLinkedin className="w-12 h-12" style={{ color: "#1a2b48" }} />
             </div>
-            <span className="text-white text-sm font-medium">LinkedIn</span>
           </a>
 
           <a
@@ -77,15 +75,10 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             data-testid="link-modal-instagram"
           >
             <div
-              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200"
-              style={{
-                background:
-                  "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
-              }}
+              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-white"
             >
-              <SiInstagram className="w-12 h-12 text-white" />
+              <SiInstagram className="w-12 h-12" style={{ color: "#1a2b48" }} />
             </div>
-            <span className="text-white text-sm font-medium">Instagram</span>
           </a>
         </div>
 
