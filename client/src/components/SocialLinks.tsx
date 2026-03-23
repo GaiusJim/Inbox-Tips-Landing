@@ -63,7 +63,7 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             <div
               className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-white"
             >
-              <SiLinkedin className="w-12 h-12" style={{ color: "#1a2b48" }} />
+              <SiLinkedin className="w-12 h-12 text-[#1a2b48]" />
             </div>
           </a>
 
@@ -77,7 +77,7 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             <div
               className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-white"
             >
-              <SiInstagram className="w-12 h-12" style={{ color: "#1a2b48" }} />
+              <SiInstagram className="w-12 h-12 text-[#1a2b48]" />
             </div>
           </a>
         </div>
