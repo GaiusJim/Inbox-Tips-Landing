@@ -93,6 +93,35 @@ export default function Home() {
           <SocialLinks />
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+          className="w-full mt-6"
+        >
+          <div className="relative mb-5">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t border-border" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-background px-3 text-muted-foreground">
+                Personal Recommendation
+              </span>
+            </div>
+          </div>
+
+          <a
+            href="https://app.bible.com/FCPc/ilyCM8GCtC?add_friend_id=202225663"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-glow-rainbow flex items-center justify-center gap-3 py-4 px-6 w-full rounded-xl hover:-translate-y-0.5 transition-transform duration-200"
+            data-testid="link-give-your-life-to-jesus"
+          >
+            <span className="text-2xl">✝️</span>
+            <span className="font-medium text-foreground">Give Your Life To Jesus</span>
+          </a>
+        </motion.div>
+
       </motion.div>
       
       <motion.footer 

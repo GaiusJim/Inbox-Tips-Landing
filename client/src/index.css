@@ -93,3 +93,22 @@ html {
     conic-gradient(from var(--glow-angle), transparent 60%, #008060 78%, transparent 94%);
   box-shadow: 0 0 14px 2px rgba(0, 128, 96, 0.35);
 }
+
+/* Rainbow rotating glow border */
+.link-glow-rainbow {
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(white, white),
+    conic-gradient(from var(--glow-angle), #ff0000, #ff7700, #ffff00, #00cc44, #0088ff, #7700ff, #ff00cc, #ff0000);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: rotate-glow 2s linear infinite;
+  box-shadow: 0 0 12px 2px rgba(200, 100, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.link-glow-rainbow:hover,
+.link-glow-rainbow:active {
+  box-shadow: 0 0 20px 4px rgba(200, 100, 255, 0.5);
+  filter: brightness(1.03);
+}
