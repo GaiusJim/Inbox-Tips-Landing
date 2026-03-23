@@ -48,7 +48,7 @@ function SocialModal({ onClose }: { onClose: () => void }) {
           <X className="w-4 h-4" />
         </button>
 
-        <p className="text-white/80 text-sm uppercase tracking-widest font-medium">
+        <p className="text-white/80 text-sm uppercase tracking-widest font-medium" style={{ fontFamily: "'Lora', serif" }}>
           Connect With Me
         </p>
 
@@ -61,7 +61,7 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             data-testid="link-modal-linkedin"
           >
             <div
-              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-white"
+              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-[#fffbf6]"
             >
               <SiLinkedin className="w-12 h-12 text-[#1a2b48]" />
             </div>
@@ -75,7 +75,7 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             data-testid="link-modal-instagram"
           >
             <div
-              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-white"
+              className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-[#fffbf6]"
             >
               <SiInstagram className="w-12 h-12 text-[#1a2b48]" />
             </div>
