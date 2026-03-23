@@ -48,10 +48,6 @@ function SocialModal({ onClose }: { onClose: () => void }) {
           <X className="w-4 h-4" />
         </button>
 
-        <p className="text-white/80 text-sm uppercase tracking-widest font-medium" style={{ fontFamily: "'Lora', serif" }}>
-          Connect With Me
-        </p>
-
         <div className="flex gap-10 items-center">
           <a
             href="https://www.linkedin.com/in/gaiusjimedits/"
@@ -63,7 +59,7 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             <div
               className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-[#fffbf6]"
             >
-              <SiLinkedin className="w-12 h-12 text-[#1a2b48]" />
+              <SiLinkedin className="w-12 h-12 text-[#0077B5]" />
             </div>
           </a>
 
@@ -77,7 +73,15 @@ function SocialModal({ onClose }: { onClose: () => void }) {
             <div
               className="w-24 h-24 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-200 bg-[#fffbf6]"
             >
-              <SiInstagram className="w-12 h-12 text-[#1a2b48]" />
+              <SiInstagram
+                className="w-12 h-12"
+                style={{
+                  background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              />
             </div>
           </a>
         </div>
